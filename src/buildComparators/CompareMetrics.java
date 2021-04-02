@@ -19,6 +19,7 @@ import javax.swing.JTextField;
 
 import guiPieces.GuiConstants;
 import modelPieces.StatsRow;
+import utilities.MathUtils;
 import weapons.Weapon;
 
 public class CompareMetrics extends Comparator {
@@ -288,7 +289,7 @@ public class CompareMetrics extends Comparator {
 					Sixth, fill out the outputMatrix and setForeground() accordingly
 				*/
 				for (j = 0; j < numBuildsToCompare; j++) {
-					outputMatrix[i][j].setText("  " + metricsToCompare[j][i]);
+					outputMatrix[i][j].setText("  " + MathUtils.round(metricsToCompare[j][i], GuiConstants.numDecimalPlaces));
 					if (bestIndex > -1 && j == bestIndex) {
 						outputMatrix[i][j].setForeground(GuiConstants.drgOverclockCleanGreen);
 					}
