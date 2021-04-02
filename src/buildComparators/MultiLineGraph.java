@@ -21,7 +21,7 @@ public class MultiLineGraph extends JPanel {
 	private int padding = 25;
 	private int labelPadding = 25;
 	private Color gridColor = new Color(200, 200, 200, 200);
-	private static final Stroke GRAPH_STROKE = new BasicStroke(1.8f, BasicStroke.CAP_BUTT, BasicStroke.JOIN_ROUND);
+	private static final Stroke GRAPH_STROKE = new BasicStroke(1.8f, BasicStroke.CAP_ROUND, BasicStroke.JOIN_ROUND);
 	private int pointWidth = 2;
 	
 	private double[][] dataToPlot;
